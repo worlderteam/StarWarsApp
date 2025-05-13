@@ -24,11 +24,12 @@ const SwapiScreen = ({ navigation }) => {
 
   useEffect(() => {
     fetch({ page, search: searchQuery, date: moment.now() });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, searchQuery]);
 
   useEffect(() => {
-    if (data?.results && data.results.length > 0) {
-      setListSwapiData((prevList) => [...prevList, ...data.results]);
+    if (data && data.length > 0) {
+      setListSwapiData((prevList) => [...prevList, ...data]);
     }
   }, [data]);
 
@@ -51,6 +52,8 @@ const SwapiScreen = ({ navigation }) => {
       merge: true,
     });
   };
+
+  console.log("listSwapiData", listSwapiData)
 
   return (
     <SafeAreaView style={{ flex: 1, padding: 20, backgroundColor: colorScheme.$whiteCream }}>
