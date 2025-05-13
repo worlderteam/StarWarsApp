@@ -1,0 +1,9 @@
+export const SPLASH_SCREEN = 'SPLASH_SCREEN';
+export const LOGIN_SCREEN = 'LOGIN_SCREEN';
+export const REGISTER_SCREEN = 'REGISTER_SCREEN';
+export const SWAPI_SCREEN = 'SWAPI_SCREEN';
+export const BOTTOM_TAB_BAR = 'BOTTOM_TAB_BAR';
+export const GROUP_DETAIL_SCREEN = 'GROUP_DETAIL_SCREEN';
+export const GROUP_HOME_SCREEN = 'Home';
+export const CREATE_GROUP_SCREEN = 'Create Group';
+export const PROFILE_SCREEN = 'You';
